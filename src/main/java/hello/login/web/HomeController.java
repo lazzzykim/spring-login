@@ -47,7 +47,6 @@ public class HomeController {
 
         // 세션 관리자에 저장된 회원정보 조회
         Member member = (Member) sessionManager.getSession(request);
-        // 로그인
         if (member == null) {
             return "home";
         }
